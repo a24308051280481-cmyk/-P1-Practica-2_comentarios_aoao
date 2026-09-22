@@ -10,138 +10,173 @@
     <!-- Para que se vea bien en celulares -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Nombre en la pestaña -->
-    <title>Tipos de listas en HTML</title>
+    <title>Tablas en HTML</title>
 <!-- Cierra las cosas escondidas -->
 </head>
 
 <!-- Todo lo que se ve en la pantalla -->
 <body>
     <!-- Titulo mas grande -->
-    <h1>Tipos de listas</h1>
-
-    <!-- Titulo mediano sobre listas ordenadas -->
-    <h2>Listas ordenadas</h2>
-    <!-- Empieza un texto explicativo -->
-    <p>Una lista ordenada es una serie de elementos los cuales 
-        tendran una numeracion de acuerdo al numeros de elementos.
+    <h1>Tipos de tablas</h1>
+    <!-- Texto explicativo sobre las tablas -->
+    <p>El objetivo fundamental de las tablas en HTML sera
+        mostrar una serie de datos en forma ordenada,
+        organizado en filas y columnas
     <!-- Se cierra el texto -->
     </p>
-    <!-- Empieza una lista con numeros -->
-    <ol>
-        
-        <li>Luna Arias </li>
-       
-        <li>Franco Andrea</li>
-        
-        <li>Granados Evelyn</li>
-    <!-- Cierra la lista con numeros -->
-    </ol>
-
-    <!-- Titulo mediano sobre listas no ordenadas -->
-    <h2>Listas no ordenadas</h2>
-    <!-- Empieza un texto explicativo -->
-    <p>Las listas no ordenadas no utilizan ninguna numeracion delante 
-        de cada item sino un pequeño elemento grafico
-    <!-- Se cierra el texto -->
-    </p>
-    <!-- Empieza una lista con puntos -->
-    <ul>
-        
-        <li>C</li>
-        
-        <li>C++</li>
-       
-        <li>Python</li>
-    <!-- Cierra la lista con puntos -->
-    </ul>
-
-    <!-- Titulo mediano sobre listas de definiciones -->
-    <h2>Lista de definiciones</h2>
-    <!-- Empieza un texto explicativo -->
-    <p>Se utiliza para asociar un termino y la definicion del mismo</p>
+    <!-- Texto para presentar las etiquetas -->
+    <p>Para la creacion de una tabla intervienen diferentes elementos:</p>
     <!-- Empieza una lista para explicar palabras -->
     <dl>
-        <!-- Primera palabra a explicar -->
-        <dt>C++</dt>
-        
+        <!-- Palabra Table -->
+        <dt>Table</dt>
+        <!-- Significado de Table -->
         <dd>
-            Es un lenguaje de programacion, diseñado a mediados de los años
-            1980 como extension del lenguaje de programacion C.
-        <!-- Cierra el significado de C++ -->
+            Es la marca de comienzo de la tabla. Este elemento requiere
+            la marca de cierre.
+        <!-- Cierra el significado de Table -->
         </dd>
-        <!-- Segunda palabra a explicar -->
-        <dt>Java</dt>
-       
+        <!-- Palabra Tr -->
+        <dt>Tr</dt>
+        <!-- Significado de Tr -->
         <dd>
-            Es un lenguaje de programacion orientado a objetos desarrollado
-            por Sun Microsystem a principios de los 90.
-        <!-- Cierra el significado de Java -->
+            Es la marca de comienzo de una fila. Esta marca debe estar
+            dentro del elemento table
+        <!-- Cierra el significado de Tr -->
         </dd>
-        <!-- Tercera palabra a explicar -->
-        <dt>JavaScript</dt>
-        
+        <!-- Palabra Td -->
+        <dt>Td</dt>
+        <!-- Significado de Td -->
         <dd>
-            Es un lenguaje interpretado, es decir que no requiere compilacion,
-            utilizado principalmente en paginas web, con una sintaxis similar
-            al lenguaje de programacion C.
-        <!-- Cierra el significado de JavaScript -->
+            Es la marca de comeinzo de una celda. Esta marca debe estar
+            dentro del elemento tr
+        <!-- Cierra el significado de Td -->
         </dd>
     <!-- Cierra la lista para explicar palabras -->
     </dl>
 
-    <!-- Titulo mediano sobre listas anidadas -->
-    <h2>Listas anidadas</h2>
-    <!-- Empieza un texto explicativo -->
-    <p>En HTML nos permite insertar una lista dentro de otra lista, se pueden
-        anidar diferentes tipos de lista de acuerdo al requerimiento
+    <!-- Titulo mediano sobre ejemplo simple -->
+    <h2>Ejemplo</h2>
+    <!-- Empieza la tabla con borde marcado -->
+    <table border="1">
+        <!-- Primera fila de la tabla -->
+        <tr>
+            <!-- Casilla con nombre de ciudad -->
+            <td>Ciudad de Mexico</td>
+            <!-- Casilla con cantidad de gente -->
+            <td>9.2 millones</td>
+        <!-- Cierra la primera fila -->
+        </tr>
+        <!-- Segunda fila de la tabla -->
+        <tr>
+            <!-- Casilla con otra ciudad -->
+            <td>Guadalajara</td>
+            <!-- Casilla con sus habitantes -->
+            <td>4.1 millones</td>
+        <!-- Cierra la segunda fila -->
+        </tr>
+        <!-- Tercera fila de la tabla -->
+        <tr>
+            <!-- Casilla con otra ciudad -->
+            <td>Monterrey</td>
+            <!-- Casilla con sus habitantes -->
+            <td>3.9 millones</td>
+        <!-- Cierra la tercera fila -->
+        </tr>
+    <!-- Cierra la tabla simple -->
+    </table>
+
+    <!-- Titulo mediano sobre tabla con titulos arriba -->
+    <h2>Tabla con encabezado</h2>
+    <!-- Texto sobre como usar los encabezados -->
+    <p>La caracteristicas de esta tabla es que se le agrega a las celdas 
+        el encabezado correspondiente, esto solo aplicaria a la primera
+        fila de la tabla con la etiqueta <em>th</em>, las demas filas
+        usarian la etiqueta <em>td</em> con normalidad.
     <!-- Se cierra el texto -->
     </p>
-    <!-- Empieza la lista principal numerada -->
-    <ol>
-        <!-- Primer pais de la lista -->
-        <li>Argentina
-            <!-- Lista de ciudades dentro de Argentina -->
-            <ul>
-               
-                <li>Buenos aires</li>
-               
-                <li>La plata</li>
-               
-                <li>Mendoza</li>
-            <!-- Cierra la lista de ciudades de Argentina -->
-            </ul>
-        <!-- Cierra el bloque de Argentina -->
-        </li>
-        <!-- Segundo pais de la lista -->
-        <li>España
-            <!-- Lista de ciudades dentro de España -->
-            <ul>
-                
-                <li>Barcelona</li>
-                
-                <li>Madrid</li>
-                
-                <li>Sevilla</li>
-            <!-- Cierra la lista de ciudades de España -->
-            </ul>
-        <!-- Cierra el bloque de España -->
-        </li>
-        <!-- Tercer pais de la lista -->
-        <li>Mexico
-            <!-- Lista de ciudades dentro de Mexico -->
-            <ul>
-               
-                <li>Chihuahua</li>
-                
-                <li>Cd. Juarez</li>
-                
-                <li>Hermosillo</li>
-            <!-- Cierra la lista de ciudades de Mexico -->
-            </ul>
-        <!-- Cierra el bloque de Mexico -->
-        </li>
-    <!-- Cierra la lista principal numerada -->
-    </ol>
+    <!-- Empieza la tabla con borde -->
+    <table border="1">
+        <!-- Fila de los titulos de arriba -->
+        <tr>
+            <!-- Titulo resaltado de la primera columna -->
+            <th>Ciudad</th>
+            <!-- Titulo resaltado de la segunda columna -->
+            <th>Cantidad de habitantes</th>
+        <!-- Cierra la fila de titulos -->
+        </tr>
+        <!-- Fila de datos de Ciudad de Mexico -->
+        <tr>
+            <!-- Nombre de la ciudad -->
+            <td>Ciudad de Mexico</td>
+            <!-- Habitantes de la ciudad -->
+            <td>9.2 millones</td>
+        <!-- Cierra la fila -->
+        </tr>
+        <!-- Fila de datos de Guadalajara -->
+        <tr>
+            <!-- Nombre de la ciudad -->
+            <td>Guadalajara</td>
+            <!-- Habitantes de la ciudad -->
+            <td>4.1 millones</td>
+        <!-- Cierra la fila -->
+        </tr>
+        <!-- Fila de datos de Monterrey -->
+        <tr>
+            <!-- Nombre de la ciudad -->
+            <td>Monterrey</td>
+            <!-- Habitantes de la ciudad -->
+            <td>3.9 millones</td>
+        <!-- Cierra la fila -->
+        </tr>
+    <!-- Cierra la tabla con encabezados -->
+    </table>
+
+    <!-- Titulo mediano sobre tabla con nombre arriba -->
+    <h2>Tabla con titulo</h2>
+    <!-- Texto sobre como poner titulo a una tabla -->
+    <p>Para insertar un titulo a la tabla debemos incorporar el elemento caption 
+        inmediatamente despues de abrir la etiqueta <em>table</em>.
+    <!-- Se cierra el texto -->
+    </p>
+    <!-- Empieza la tabla con borde -->
+    <table border="1">
+        <!-- Titulo principal que va sobre la tabla -->
+        <caption>Poblacion de las ciudades mas concurridas de Mexico</caption>
+        <!-- Fila de titulos de columnas -->
+        <tr>
+            <!-- Titulo de la columna uno -->
+            <th>Ciudad</th>
+            <!-- Titulo de la columna dos -->
+            <th>Cantidad de habitantes</th>
+        <!-- Cierra la fila de titulos -->
+        </tr>
+        <!-- Fila con la primera ciudad -->
+        <tr>
+            <!-- Nombre de la ciudad -->
+            <td>Ciudad de Mexico</td>
+            <!-- Habitantes de la ciudad -->
+            <td>9.2 millones</td>
+        <!-- Cierra la fila -->
+        </tr>
+        <!-- Fila con la segunda ciudad -->
+        <tr>
+            <!-- Nombre de la ciudad -->
+            <td>Guadalajara</td>
+            <!-- Habitantes de la ciudad -->
+            <td>4.1 millones</td>
+        <!-- Cierra la fila -->
+        </tr>
+        <!-- Fila con la tercera ciudad -->
+        <tr>
+            <!-- Nombre de la ciudad -->
+            <td>Monterrey</td>
+            <!-- Habitantes de la ciudad -->
+            <td>3.9 millones</td>
+        <!-- Cierra la fila -->
+        </tr>
+    <!-- Cierra la tabla con titulo -->
+    </table>
 <!-- Cierra lo que se ve en pantalla -->
 </body>
 
